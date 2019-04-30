@@ -2,6 +2,8 @@
 
 set -e
 
+exit 2
+
 jekyll build
 rm -rf htmltest
 mkdir -p htmltest
