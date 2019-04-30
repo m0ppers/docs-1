@@ -9,11 +9,10 @@ mkdir -p htmltest
 # otherwise it would fail to find absolute links like /docs/3.5
 cp -a _site htmltest/docs
 
-mkdir -p tmp
 (cd /tmp && \
     wget -nv https://github.com/wjdp/htmltest/releases/download/v0.10.1/htmltest_0.10.1_linux_amd64.tar.gz && \
     tar xvzf htmltest_0.10.1_linux_amd64.tar.gz
 )
 
-tmp/htmltest -s
+/tmp/htmltest -s
 
